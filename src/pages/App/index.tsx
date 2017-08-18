@@ -1,7 +1,7 @@
 import * as React from 'react';
-import './App.css';
+import './index.css';
 
-const logo = require('./logo.svg');
+const logo = require('../../assets/logo.svg');
 
 class App extends React.Component {
   render() {
@@ -18,5 +18,4 @@ class App extends React.Component {
     );
   }
 }
-
 export default App;
