@@ -9,6 +9,7 @@
     "@types/react-dom": "^15.5.3",
     "@types/react-redux": "^5.0.4",
     "@types/react-router": "^4.0.15",
+    "antd": "^2.12.7",
     "app-root-path": "^2.0.1",
     "autoprefixer": "7.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
@@ -104,5 +105,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.4.0"
   }
 }

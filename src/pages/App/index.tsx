@@ -1,12 +1,9 @@
+/* tslint-disable */
 import * as React from 'react';
+import { Layout, Menu } from 'antd';
+const { Header, Sider, Content, Footer } = Layout;
+const { SubMenu } = Menu;
 import './index.css';
-// import Rx from 'rxjs';
-const logo = require('../../assets/logo.svg');
-import Footer from '../../components/footer';
-
-export interface State {
-  date: string;
-}
 
 class App extends React.Component {
   constructor(props: object) {
@@ -14,24 +11,40 @@ class App extends React.Component {
     this.state = {
       name: new Date()
     };
-    // this.state.date = new Date();
   }
   componentDidMount () {
     setInterval(() => {
       this.setState({
         name: new Date()
       });
-    },          1000);
+    }, 1000);
   }
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <div>{JSON.stringify(this.state)}</div>
-        <Footer copyright="ss"/>
+        <Layout>
+          <Sider>
+            <Menu mode="inline">
+              <Menu.Item>
+                item
+              </Menu.Item>
+              <SubMenu>
+                <Menu.Item>
+                  item
+                </Menu.Item>
+                <Menu.Item>
+                  item
+                </Menu.Item>
+              </SubMenu>
+            </Menu>
+          </Sider>
+
+          <Layout>
+            <Header>h</Header>
+            <Content>c</Content>
+            <Footer style={{ textAlign: 'center'}}>v2r ©2017 Created by Gavin Gong</Footer>
+          </Layout>
+        </Layout>
       </div>
     );
   }
