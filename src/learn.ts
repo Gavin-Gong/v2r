@@ -9,4 +9,3 @@ interface I {
   (source: string, substring: string): boolean;
   [index: number]: string;
 }
-

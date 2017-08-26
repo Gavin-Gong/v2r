@@ -1,5 +1,5 @@
-/* tslint-disable */
 import * as React from 'react';
+import Template from '../../components/template'
 import { Layout, Menu } from 'antd';
 const { Header, Sider, Content, Footer } = Layout;
 const { SubMenu } = Menu;
@@ -9,23 +9,18 @@ import './index.css';
 class App extends React.Component {
   constructor(props: object) {
     super(props);
-    this.state = {
-      name: new Date()
-    };
   }
   componentDidMount () {
-    setInterval(() => {
-      this.setState({
-        name: new Date()
-      });
-    }, 1000);
+    console.log(this)
   }
   render() {
 
     const HelloWord = function() {
-      return (<div>
-        hello word
-      </div>)
+      return (
+        <div>
+          hello word
+        </div>
+      )
     }
     return (
       <div className="App">
@@ -34,16 +29,16 @@ class App extends React.Component {
             <Sider>
               <Menu mode="inline">
                 <Menu.Item>
-
+                    Home
                 </Menu.Item>
-                <SubMenu>
+                <SubMenu title="wolf">
                   <Menu.Item>
                     <Link to="/hello">
                       item
                     </Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link>
+                    <Link to="/home">
                       item
                     </Link>
                   </Menu.Item>
@@ -52,7 +47,9 @@ class App extends React.Component {
             </Sider>
 
             <Layout>
-              <Header>h</Header>
+              <Header>
+                <Template name="gghh"></Template>
+              </Header>
               <Content>
                 <Route path="/hello" component={HelloWord}></Route>
               </Content>
