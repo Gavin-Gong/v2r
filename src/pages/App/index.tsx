@@ -1,9 +1,10 @@
 import * as React from 'react';
-import Template from '../../components/template'
+import Template from '../../containers/template'
+import Foo from '../../components/foo'
 import { Layout, Menu } from 'antd';
 const { Header, Sider, Content, Footer } = Layout;
 const { SubMenu } = Menu;
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './index.css';
 
 class App extends React.Component {
@@ -14,14 +15,6 @@ class App extends React.Component {
     console.log(this)
   }
   render() {
-
-    const HelloWord = function() {
-      return (
-        <div>
-          hello word
-        </div>
-      )
-    }
     return (
       <div className="App">
         <Router>
@@ -48,10 +41,10 @@ class App extends React.Component {
 
             <Layout>
               <Header>
-                <Template name="gghh"></Template>
+                <Template></Template>
+                <Foo></Foo>
               </Header>
               <Content>
-                <Route path="/hello" component={HelloWord}></Route>
               </Content>
               <Footer style={{ textAlign: 'center'}}>v2r ©2017 Created by Gavin Gong</Footer>
             </Layout>

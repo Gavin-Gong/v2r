@@ -8,7 +8,7 @@ function Template({ name }: Props) {
   return (
     <div>
       <p>{name}</p>
-      <button>update</button>
+      <button>template update</button>
     </div>
   )
 }

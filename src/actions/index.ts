@@ -1,3 +1,17 @@
+/* tslint-disable */
 import * as types from '../constants/ActionTypes';
+import  { Action } from '../typings'
 
-export const fetchData: (params: object) => object = params  => ({ type: types.FETCH_DATA, params })
+//  const fetchData = params: object  => ({ type: types.FETCH_DATA, params })
+export interface Params {
+  [extraProp: string]: types.FETCH_DATA
+}
+  const fetchData = function(params: Params): Action {
+    return {
+      type: types.FETCH_DATA,
+      params
+    }
+ }
+ export default {
+   fetchData
+ }

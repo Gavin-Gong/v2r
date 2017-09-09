@@ -1,13 +1,14 @@
 import * as React from 'react';
 
 export interface Props {
-  copyright: string;
+  // copss
 }
 class Footer extends React.Component<Props, object> {
   render () {
     return (
       <div>
-        component, {this.props.copyright}
+        {/* component, {this.props.copyright} */}
+        <button>foo click</button>
       </div>
     );
   }
