@@ -1,6 +1,5 @@
 import { combineReducers } from 'redux'
-import fetchData from './fetchData'
-console.log(typeof fetchData)
+import update from './update'
 export default combineReducers({
-  fetchData
+  update
 })

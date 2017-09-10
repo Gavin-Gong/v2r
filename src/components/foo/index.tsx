@@ -1,17 +1,18 @@
 import * as React from 'react';
 
 export interface Props {
-  // copss
+  change: any
 }
-class Footer extends React.Component<Props, object> {
+class Foo extends React.Component<Props, any> {
   render () {
+    const { change } = this.props
     return (
       <div>
         {/* component, {this.props.copyright} */}
-        <button>foo click</button>
+        <button onClick={ change }>foo click</button>
       </div>
     );
   }
 }
 
-export default Footer;
+export default Foo;

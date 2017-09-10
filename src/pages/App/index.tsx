@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Template from '../../containers/template'
-import Foo from '../../components/foo'
+import Foo from '../../containers/foo'
 import { Layout, Menu } from 'antd';
 const { Header, Sider, Content, Footer } = Layout;
 const { SubMenu } = Menu;
@@ -15,6 +15,9 @@ class App extends React.Component {
     console.log(this)
   }
   render() {
+    // const change = () => {
+    //   console.log('click')
+    // }
     return (
       <div className="App">
         <Router>
@@ -41,7 +44,7 @@ class App extends React.Component {
 
             <Layout>
               <Header>
-                <Template></Template>
+                <Template ></Template>
                 <Foo></Foo>
               </Header>
               <Content>
