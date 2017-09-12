@@ -13,8 +13,7 @@ just for learn react
 - [ ] router
 - [ ] redux
 
-#### site
-- [ ] markdown
+### roadmap
+- [ ] graphql github
+- [ ] markdown editor
 - [ ] data visual
-- [ ] graphql
-- [ ] 
