@@ -7,6 +7,15 @@ import './styles/index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux'
 import app from './reducers'
+import api from './api'
+
+console.log(api);
+api.fetchGithub()
+  .then(function(res: any) {
+    console.log(res.data)
+  }).catch(function(err: any) {
+    console.log(err)
+  })
 const store = createStore(
   app,
   // eslint-disable-next-line

@@ -1,4 +1,3 @@
-import { } from 'antd/lib/icon';
 import * as React from 'react';
 // import Template from '../../containers/template'
 // import Foo from '../../containers/foo'
@@ -9,7 +8,6 @@ import './index.css';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
-
 class App extends React.Component {
   state = {
     collapsed: false,
