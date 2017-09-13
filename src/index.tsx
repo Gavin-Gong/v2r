@@ -7,10 +7,9 @@ import './styles/index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux'
 import app from './reducers'
-import api from './api'
+import gql from './api/graphql'
 
-console.log(api);
-api.fetchGithub()
+gql.fetchGithub()
   .then(function(res: any) {
     console.log(res.data)
   }).catch(function(err: any) {
