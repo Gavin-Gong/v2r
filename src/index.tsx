@@ -8,12 +8,18 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux'
 import app from './reducers'
 import gql from './api/graphql'
+import rest from './api/rest'
 
 gql.fetchGithub()
   .then(function(res: any) {
     console.log(res.data)
   }).catch(function(err: any) {
     console.log(err)
+  })
+
+rest.fetchArticle()
+  .then(res => {
+    console.log(res.data)
   })
 const store = createStore(
   app,

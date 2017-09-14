@@ -5,7 +5,7 @@ just for learn react
 
 ### TODO
 #### config
-- [ ] basic layout 
+- [ ] basic layout
 - [ ] scss
 - [ ] antd import
 - [ ] alias
@@ -17,3 +17,10 @@ just for learn react
 - [ ] graphql github
 - [ ] markdown editor
 - [ ] data visual
+
+### config.ts in src
+``` javascript
+export default {
+  github: 'ebf2c526b107085c220fb83f07dd1f0d08bf866e'
+}
+```

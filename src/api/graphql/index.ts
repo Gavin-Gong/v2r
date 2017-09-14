@@ -1,5 +1,5 @@
 import ApolloClient, { createNetworkInterface } from 'apollo-client';
-import config from '../config'
+import config from '../../config'
 import github from './github'
 
 const client = new ApolloClient({
@@ -22,7 +22,7 @@ for (var key in github) {
   if (github.hasOwnProperty(key)) {
     var ele = github[key];
     api[key] = () => client.query(ele)
-    
+
   }
 }
 export default api
