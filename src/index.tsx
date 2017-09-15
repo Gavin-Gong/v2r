@@ -1,7 +1,7 @@
  /* tslint:disable */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './pages/App';
+import App from './views/App';
 import registerServiceWorker from './registerServiceWorker';
 import './styles/index.css';
 import { Provider } from 'react-redux';

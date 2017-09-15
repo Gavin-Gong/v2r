@@ -3,6 +3,7 @@ import * as React from 'react';
 // import Foo from '../../containers/foo'
 import XFooter from '../../components/Footer'
 import { Link, Route,  BrowserRouter as Router, } from 'react-router-dom'
+import RouteView from '../../router'
 import './index.css';
 
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
@@ -66,7 +67,8 @@ class App extends React.Component {
               </Breadcrumb>
               <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
                 Bill is a cat
-                <Route exact path="/home" component={ XFooter }></Route>
+                <Route exact path="/home" component={XFooter}></Route>
+                <RouteView></RouteView>
               </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>
