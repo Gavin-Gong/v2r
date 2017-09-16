@@ -1,6 +1,4 @@
 import * as React from 'react';
-// import Template from '../../containers/template'
-// import Foo from '../../containers/foo'
 import XFooter from '../../components/Footer'
 import { Link, Route,  BrowserRouter as Router, } from 'react-router-dom'
 import RouteView from '../../router'
