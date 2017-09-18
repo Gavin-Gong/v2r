@@ -1,8 +1,8 @@
 import * as React from 'react';
 // import Template from '../../containers/template'
 // import Foo from '../../containers/foo'
-import XFooter from '../../components/Footer'
-import { Link, Route,  BrowserRouter as Router, } from 'react-router-dom'
+// import XFooter from '../../components/Footer'
+// import { Link, Route,  BrowserRouter as Router, } from 'react-router-dom'
 import RouteView from '../../router'
 import './index.css';
 
@@ -18,7 +18,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <Router>
+      // <Router>
         <Layout style={{ minHeight: '100vh' }}>
           <Sider
             collapsible
@@ -28,10 +28,10 @@ class App extends React.Component {
             <div className="logo" />
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
               <Menu.Item key="1">
-                <Link to="/home">
+                {/* <Link to="/home">
                   <Icon type="home" />
                   <span>Home</span>
-                </Link>
+                </Link> */}
               </Menu.Item>
               <Menu.Item key="2">
                 <Icon type="desktop" />
@@ -67,7 +67,7 @@ class App extends React.Component {
               </Breadcrumb>
               <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
                 Bill is a cat
-                <Route exact path="/home" component={XFooter}></Route>
+                {/* <Route exact path="/home" component={XFooter}></Route> */}
                 <RouteView></RouteView>
               </div>
             </Content>
@@ -76,7 +76,7 @@ class App extends React.Component {
             </Footer>
           </Layout>
         </Layout>
-      </Router>
+      // </Router>
     );
   }
 }
