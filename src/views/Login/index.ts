@@ -1,4 +1,4 @@
-import view from './components/login'
+import view from './components/container'
 
 export {
   view

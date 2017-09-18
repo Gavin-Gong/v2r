@@ -22,6 +22,7 @@ const View = styled.div`
   backgroud: #eee  center center / cover no-repeat;
   background-image: url(${bgUrl});
 `
+
 const Card = styled.div`
   position: absolute;
   top: 50%;

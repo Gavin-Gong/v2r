@@ -1,19 +1,25 @@
 import * as React from 'react'
 import { Card, Input, Avatar, Button, View } from './style'
-export interface Props {
-  
-}
 
-const Login = (props: Props) => {
-  return(
+class Login extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props)
+  }
+  handleSubmit (e: any) {
+    console.log('click', e)
+  }
+  render() {
+    return (
     <View>
       <Card>
-        <Avatar></Avatar>
+        <Avatar>
+        </Avatar>
         <Input type="text" onChange={e => console.log(e)} />
         <Input type="password"/>
-        <Button>登录</Button>
+        <Button onClick={this.handleSubmit}>登录</Button>
       </Card>
     </View>
-  )
+  )}
 }
+
 export default Login
