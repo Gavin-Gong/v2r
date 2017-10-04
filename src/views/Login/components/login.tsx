@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Card, Input, Avatar, Button, View } from './style'
+import './styles.css'
 
 class Login extends React.Component<any, any> {
   constructor(props: any) {
@@ -10,15 +10,15 @@ class Login extends React.Component<any, any> {
   }
   render() {
     return (
-    <View>
-      <Card>
-        <Avatar>
-        </Avatar>
-        <Input type="text" onChange={e => console.log(e)} />
-        <Input type="password"/>
-        <Button onClick={this.handleSubmit}>登录</Button>
-      </Card>
-    </View>
+    <div className="login">
+      <div>
+        <div>
+        </div>
+        <input type="text" onChange={e => console.log(e)} />
+        <input type="password"/>
+        <button onClick={this.handleSubmit}>登录</button>
+      </div>
+    </div>
   )}
 }
 

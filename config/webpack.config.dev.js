@@ -1,6 +1,8 @@
 'use strict';
 
 const autoprefixer = require('autoprefixer');
+const cssUtils = require('precss');
+const sassLike = require('postcss-utilities');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -97,7 +99,7 @@ module.exports = {
       '.jsx',
     ],
     alias: {
-      
+
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web'
@@ -213,6 +215,8 @@ module.exports = {
                   ],
                   flexbox: 'no-2009',
                 }),
+                sassLike({}),
+                cssUtils({})
               ],
             },
           },

@@ -5,11 +5,7 @@ just for learn react
 
 ### TODO
 #### config
-- [ ] basic layout
-- [ ] scss
-- [ ] antd import
-- [ ] alias
-- [ ] axios config
+- [ ] ts type check
 - [ ] router
 - [ ] redux
 
