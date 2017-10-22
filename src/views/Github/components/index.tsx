@@ -21,7 +21,6 @@ class GithubWrapper extends React.Component<any, any> {
   }
 }
 
-
 // function GithubWrapper() {
 //   const greet = 'greet'
 //   return (
