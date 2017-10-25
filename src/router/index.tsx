@@ -14,7 +14,7 @@ class RouteView extends React.Component {
         <Switch>
           <Route path="/login" component={Login} exact></Route>
           <Route path="/github" component={Github}></Route>
-          {<Route path="/one" component={One}></Route>}
+          <Route path="/one" component={One}></Route>
         </Switch>
       </Router>
     );

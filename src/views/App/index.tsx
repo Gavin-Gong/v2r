@@ -2,7 +2,7 @@ import * as React from 'react';
 // import Template from '../../containers/template'
 // import Foo from '../../containers/foo'
 // import XFooter from '../../components/Footer'
-// import { Link, Route,  BrowserRouter as Router, } from 'react-router-dom'
+import { Link, BrowserRouter as Router } from 'react-router-dom'
 import RouteView from '../../router'
 import './index.css';
 
@@ -18,7 +18,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      // <Router>
+      <Router>
         <Layout style={{ minHeight: '100vh' }}>
           <Sider
             collapsible
@@ -28,14 +28,14 @@ class App extends React.Component {
             <div className="logo" />
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
               <Menu.Item key="1">
-                {/* <Link to="/home">
+                <Link to="/one">
                   <Icon type="home" />
-                  <span>Home</span>
-                </Link> */}
+                  <span>每日一文</span>
+                </Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Icon type="desktop" />
-                <span>Option 2</span>
+                <span>开眼</span>
               </Menu.Item>
               <SubMenu
                 key="sub1"
@@ -76,7 +76,7 @@ class App extends React.Component {
             </Footer>
           </Layout>
         </Layout>
-      // </Router>
+      </Router>
     );
   }
 }

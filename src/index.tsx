@@ -6,12 +6,11 @@ import registerServiceWorker from './registerServiceWorker';
 import './styles/index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux'
-import app from './reducers'
+import { reducers } from './views'
 
+console.log(reducers)
 const store = createStore(
-  app,
-  // eslint-disable-next-line
-  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // tslint:disable-line
+  reducers,
 )
 
 ReactDOM.render(

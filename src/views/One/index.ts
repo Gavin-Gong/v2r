@@ -1,9 +1,9 @@
 import action  from './action'
-import reducer from './reducer'
+import reducers from './reducers'
 import view from './components'
 
 export {
   action,
-  reducer,
+  reducers,
   view
 }

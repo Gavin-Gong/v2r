@@ -14,3 +14,9 @@ export function fetchOne() {
 export function fetchOneRandom() {
   return axios.get('https://interface.meiriyiwen.com/article/random?dev=1')
 }
+
+export function fetchEye(params: object = {}) {
+  return axios.get('http://baobab.kaiyanapp.com/api/v4/tabs/selected', {
+    params
+  })
+}
