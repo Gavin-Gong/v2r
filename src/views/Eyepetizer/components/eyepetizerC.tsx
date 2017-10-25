@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Eye from './eyepetizer'
 import { connect } from 'react-redux'
+import { IAction } from '../actions'
 
 export class EyepetizerC extends React.Component<any, any> {
   render() {
@@ -9,7 +10,10 @@ export class EyepetizerC extends React.Component<any, any> {
     )
   }
   componentDidMount() {
-    // 
+    this.props.dispatch({
+      type: 'EYE_TAB_FILTER',
+      filterKey: 'ALL'
+    } as IAction)
   }
 }
 

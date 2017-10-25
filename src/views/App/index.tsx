@@ -34,8 +34,10 @@ class App extends React.Component {
                 </Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Icon type="desktop" />
-                <span>开眼</span>
+                <Link to="/eye">
+                  <Icon type="desktop" />
+                  <span>开眼</span>
+                </Link>
               </Menu.Item>
               <SubMenu
                 key="sub1"

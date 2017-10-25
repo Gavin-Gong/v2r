@@ -1,7 +1,7 @@
 import view from './components'
 import reducers from './reducers'
 
-export default {
+export {
   view,
   reducers
 }

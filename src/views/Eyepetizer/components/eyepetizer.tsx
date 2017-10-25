@@ -7,7 +7,7 @@ export interface EyepetizerProps {
 export default class Eyepetizer extends React.Component<EyepetizerProps, any> {
   render() {
     return (
-      <div>{this.props}</div>
+      <div>this.props</div>
     )
   }
 }
