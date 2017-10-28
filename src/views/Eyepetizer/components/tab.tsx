@@ -12,10 +12,10 @@ class Tab extends Component<IEyeProps, any> {
       return (
         <li className="tab-item" data-type={props.type}>
           <label>
-            <input type="radio" name="tab"/>
+            <input type="radio" name="tab" defaultChecked={props.type === 'ALL'}/>
             {props.name}
           </label>
-        </li>
+        </li>  
       )
     }
 

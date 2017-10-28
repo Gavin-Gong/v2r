@@ -1,21 +1,29 @@
-import { tabFilter } from './actions'
+// import { tabFilter } from './actions'
 
-const initState = {
-  status: 'init',
-  data: {}
-}
+// const initState = {
+//   status: 'init',
+//   data: {
+//     itemList: []
+//   }
+// }
 export default {
   filterType (state: any, action: any) {
-    switch (action.type) {
-      case tabFilter.ALL:
-        return {
-          status: 'success'
-        }
-    
-      default:
-        break;
-    }
 
-    return initState
+    // console.log(action)
+    // switch (action.type) {
+    //   case tabFilter.ALL:
+    //     return {
+    //       status: 'success'
+    //     }
+    
+    //   default:
+    //     break;
+    // }
+
+    // return initState
+    return {
+      status: 'init',
+      data: action.data || { itemList: [] }
+    }
   }
 }

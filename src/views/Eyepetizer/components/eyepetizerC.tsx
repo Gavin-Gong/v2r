@@ -1,26 +1,24 @@
 import * as React from 'react'
 // import Eye from './eyepetizer'
 import Tab from './tab'
+import List from './list'
 import { connect } from 'react-redux'
-import { IAction } from '../actions'
+import { FetchEye } from '../actions'
 
 export class EyepetizerC extends React.Component<any, any> {
   render() {
     return (
       <div>
         <Tab onTab={this.onTab}/>
+        <List {...this.props.filterType.data}/>
       </div>
     )
   }
   onTab = (type: string) => {
-    //
-    console.log('wow', type)
+    this.props.dispatch(FetchEye)
   }
   componentDidMount() {
-    this.props.dispatch({
-      type: 'EYE_TAB_FILTER',
-      filterKey: 'ALL'
-    } as IAction)
+    this.props.dispatch(FetchEye)
   }
 }
 

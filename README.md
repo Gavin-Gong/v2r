@@ -3,6 +3,8 @@ just for learn react
 
 
 
+- []  redux 限制字段
+
 ### TODO
 #### config
 - [ ] ts type check
