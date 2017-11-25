@@ -1,4 +1,4 @@
-import action  from './action'
+import action  from './actions'
 import reducers from './reducers'
 import view from './components'
 

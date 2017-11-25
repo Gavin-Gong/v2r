@@ -40,10 +40,10 @@
     "react-router-dom": "^4.2.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
-    "redux-observable": "^0.16.0",
+    "redux-observable": "^0.17.0",
     "redux-saga": "^0.15.6",
     "redux-thunk": "^2.2.0",
-    "rxjs": "^5.0.0",
+    "rxjs": "^5.5.2",
     "source-map-loader": "^0.2.1",
     "style-loader": "0.18.2",
     "styled-components": "^2.1.2",
@@ -58,7 +58,7 @@
     "webpack": "2.6.1",
     "webpack-dev-server": "2.5.0",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -118,6 +118,7 @@
   "devDependencies": {
     "@types/react-router-dom": "^4.0.7",
     "@types/redux": "^3.6.0",
+    "@types/whatwg-fetch": "^0.0.33",
     "babel-plugin-import": "^1.4.0",
     "postcss-utilities": "^0.7.0",
     "precss": "^2.0.0"
