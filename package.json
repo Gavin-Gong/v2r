@@ -57,8 +57,7 @@
     "url-loader": "0.5.8",
     "webpack": "2.6.1",
     "webpack-dev-server": "2.5.0",
-    "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "^2.0.3"
+    "webpack-manifest-plugin": "1.1.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -118,7 +117,6 @@
   "devDependencies": {
     "@types/react-router-dom": "^4.0.7",
     "@types/redux": "^3.6.0",
-    "@types/whatwg-fetch": "^0.0.33",
     "babel-plugin-import": "^1.4.0",
     "postcss-utilities": "^0.7.0",
     "precss": "^2.0.0"

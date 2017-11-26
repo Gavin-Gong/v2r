@@ -1,23 +1,20 @@
 
 import React from 'react'
 
-// export interface OneProps extends Props<any> {
-//   onRandom: any,
-//   [extraProps: string]: any
-// }
-
 export default class One extends React.Component<any, any> {
   render() {
-    console.log(this.props)
-    const { playList } = this.props
-
-    const Card = (name: string, img: string, tags: Array<any>, trackNumberUpdateTime: number) => {
+    const { playList, getPlayList } = this.props
+    /**
+     * @desc Card 组件
+     */
+    const Card = (card: any) => {
+      const { coverImgUrl, name, tags } = card;
       return (
         <li>
-          <div>name</div>
-          <img src={img} />
+          <div>{name}</div>
+          <img src={coverImgUrl}/>
           <ul>
-            {/* {tags.map((item, key) => <li key={key}>{item.name}</li>)} */}
+            {tags.map((item: string, key: number) => <li key={key}>{item}</li>)}
           </ul>
         </li>
       );
@@ -25,8 +22,9 @@ export default class One extends React.Component<any, any> {
     return (
       <div className="pay-list">
         <ul>
-          {playList.map((item: any, key: number) => <Card key={key} {...item}/>)}
+          {playList.map((item: any) => <Card key={item.id} {...item}/>)}
         </ul>
+        <button onClick={getPlayList}>button</button>
       </div>
     )
   }
