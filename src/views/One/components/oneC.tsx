@@ -3,7 +3,6 @@ import One from './one'
 // import { getPlayList } from '../../../api'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
-import './one.css'
 
 // import { AxiosResponse } from 'axios'
 export class OneC extends React.Component<any, any> {

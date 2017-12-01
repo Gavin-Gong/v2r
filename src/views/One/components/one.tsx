@@ -1,5 +1,6 @@
 
 import React from 'react'
+import './one.css'
 
 export default class One extends React.Component<any, any> {
   render() {
@@ -20,7 +21,7 @@ export default class One extends React.Component<any, any> {
       );
     };
     return (
-      <div className="pay-list">
+      <div className="pay-list list">
         <ul>
           {playList.map((item: any) => <Card key={item.id} {...item}/>)}
         </ul>

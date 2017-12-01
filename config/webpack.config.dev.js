@@ -191,12 +191,16 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          require.resolve('style-loader'),
           {
-            loader: require.resolve('css-loader'),
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
             options: {
-              importLoaders: 1,
-            },
+              // modules: true,
+              localIdentName: '[path][name]__[local]--[hash:base64:5]',
+              importLoaders: 1
+            }
           },
           {
             loader: require.resolve('postcss-loader'),
