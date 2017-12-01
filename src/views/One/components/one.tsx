@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './one.css'
 
 export default class One extends React.Component<any, any> {
@@ -11,18 +12,21 @@ export default class One extends React.Component<any, any> {
     const Card = (card: any) => {
       const { coverImgUrl, name, tags } = card;
       return (
-        <li>
-          <div>{name}</div>
-          <img src={coverImgUrl}/>
-          <ul>
-            {tags.map((item: string, key: number) => <li key={key}>{item}</li>)}
-          </ul>
-        </li>
+        <Link to="/">
+          <li className="playlist-card">
+            <div className="card-bg" style={{ backgroundImage: `url(${coverImgUrl})` }}>
+              <ul className="tag-list" >
+                {tags.map((item: string, key: number) => <li key={key}>{item}</li>)}
+              </ul>
+            </div>
+            <div className="card-title">{name}</div>
+          </li>
+        </Link>
       );
     };
     return (
-      <div className="pay-list list">
-        <ul>
+      <div className="playlist list">
+        <ul className="playlist">
           {playList.map((item: any) => <Card key={item.id} {...item}/>)}
         </ul>
         <button onClick={getPlayList}>button</button>
