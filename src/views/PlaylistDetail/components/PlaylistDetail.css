@@ -1,0 +1,41 @@
+.playlist-detail {
+
+}
+.playlist-detail .playlist-info img {
+  float: left;
+  max-width: 100px;
+  margin-right: 20px;
+}
+.playlist-info {
+  /* display: inline-flex; */
+  overflow: hidden;
+  height: 100px;
+}
+.track-item {
+  padding: 10px;
+  background: #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+.song-title {
+  font-size: 16px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.playlist-title {
+  font-size: 18px;
+}
+.creator-wrapper {
+  display: flex;
+  align-items: center;
+}
+.playlist-text {
+  padding: 6px 0;
+  height: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

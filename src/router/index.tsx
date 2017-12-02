@@ -4,6 +4,7 @@ import { view as Login } from '../views/Login'
 import { view as Github } from '../views/Github'
 import { view as One } from '../views/One'
 import { view as Eyepetizer } from '../views/Eyepetizer'
+import { view as PlaylistDetail } from '../views/PlaylistDetail'
 
 class RouteView extends React.Component {
   onCollapse = (collapsed: any) => {
@@ -17,6 +18,7 @@ class RouteView extends React.Component {
           <Route path="/github" component={Github}></Route>
           <Route path="/one" component={One}></Route>
           <Route path="/eye" component={Eyepetizer}></Route>
+          <Route path="/playlist/:id" component={PlaylistDetail}></Route>
         </Switch>
       </Router>
     );

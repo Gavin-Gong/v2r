@@ -10,9 +10,9 @@ export default class One extends React.Component<any, any> {
      * @desc Card 组件
      */
     const Card = (card: any) => {
-      const { coverImgUrl, name, tags } = card;
+      const { coverImgUrl, name, tags, id } = card;
       return (
-        <Link to="/">
+        <Link to={`/playlist/${id}`}>
           <li className="playlist-card">
             <div className="card-bg" style={{ backgroundImage: `url(${coverImgUrl})` }}>
               <ul className="tag-list" >

@@ -22,3 +22,9 @@ export function fetchEye(params: object = {}) {
 export function getPlayList() {
   return axios.get(`${host}/user/playlist?uid=6938518`);
 }
+export function getPlayListDetail(params: {id: string}) {
+  return axios.get(`${host}/playlist/detail`, {
+    params,
+  })
+  
+}
