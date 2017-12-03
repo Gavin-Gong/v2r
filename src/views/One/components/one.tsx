@@ -1,8 +1,10 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './one.css'
+import * as styles from './one.css'
+import CSSModules from 'react-css-modules'
 
+@CSSModules(styles, { allowMultiple: true })
 export default class One extends React.Component<any, any> {
   render() {
     const { playList, getPlayList } = this.props
@@ -13,20 +15,20 @@ export default class One extends React.Component<any, any> {
       const { coverImgUrl, name, tags, id } = card;
       return (
         <Link to={`/playlist/${id}`}>
-          <li className="playlist-card">
-            <div className="card-bg" style={{ backgroundImage: `url(${coverImgUrl})` }}>
-              <ul className="tag-list" >
+          <li styleName="playlist-card">
+            <div styleName="card-bg" style={{ backgroundImage: `url(${coverImgUrl})` }}>
+              <ul styleName="tag-list" >
                 {tags.map((item: string, key: number) => <li key={key}>{item}</li>)}
               </ul>
             </div>
-            <div className="card-title">{name}</div>
+            <div styleName="card-title">{name}</div>
           </li>
         </Link>
       );
     };
     return (
-      <div className="playlist list">
-        <ul className="playlist">
+      <div styleName="playlist list">
+        <ul styleName="playlist">
           {playList.map((item: any) => <Card key={item.id} {...item}/>)}
         </ul>
         <button onClick={getPlayList}>button</button>
