@@ -9,6 +9,7 @@ import './index.css';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
+import Player from './components/player'
 class App extends React.Component {
   state = {
     collapsed: false,
@@ -69,8 +70,8 @@ class App extends React.Component {
               </Breadcrumb>
               <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
                 Bill is a cat
-                {/* <Route exact path="/home" component={XFooter}></Route> */}
                 <RouteView></RouteView>
+                <Player track="ss"/>
               </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>

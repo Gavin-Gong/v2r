@@ -1,4 +1,4 @@
-:local {
+/* :local { */
   .list {
     list-style: none;
   }
@@ -50,4 +50,4 @@
     /* border: 1px solid #fff; */
     background-color: rgba(0, 0, 0, .6);
   }
-}
+/* } */
