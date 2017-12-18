@@ -17,7 +17,21 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "views/*": ["src/views/*"],
+      "router/*": ["src/router/*"],
+      "styles/*": ["src/styles/*"],
+      "utils/*": ["src/utils/*"],
+      "redux/*": ["src/redux/*"],
+      "components/*": ["src/components/*"],
+      "services/*": ["src/services/*"],
+      "api/*": ["src/api/*"],
+      "api": ["src/api"],
+      "typings": ["src/typings/index.d.ts"]
+    }
   },
   "exclude": [
     "node_modules",
@@ -27,5 +41,14 @@
     "webpack",
     "jest",
     "src/setupTests.ts"
-  ]
+  ],
+  "typeAcquisition": {
+    "include": [
+      "react",
+      "react-router-dom",
+      "redux",
+      "react-redux",
+      "redux-observable"
+    ]
+  }
 }

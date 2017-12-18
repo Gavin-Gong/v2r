@@ -177,17 +177,6 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]',
         },
       },
-      // Compile .tsx?
-      {
-        test: /\.(ts|tsx)$/,
-        include: paths.appSrc,
-        loader: require.resolve('ts-loader'),
-      },
-      // "postcss" loader applies autoprefixer to our CSS.
-      // "css" loader resolves paths in CSS and adds assets as dependencies.
-      // "style" loader turns CSS into JS modules that inject <style> tags.
-      // In production, we use a plugin to extract that CSS to a file, but
-      // in development "style" loader enables hot editing of CSS.
       {
         test: /\.css$/,
         use: [
@@ -202,6 +191,11 @@ module.exports = {
               // importLoaders: 1
             }
           },
+          // "postcss" loader applies autoprefixer to our CSS.
+          // "css" loader resolves paths in CSS and adds assets as dependencies.
+          // "style" loader turns CSS into JS modules that inject <style> tags.
+          // In production, we use a plugin to extract that CSS to a file, but
+          // in development "style" loader enables hot editing of CSS.
           {
             loader: require.resolve('postcss-loader'),
             options: {
@@ -226,6 +220,33 @@ module.exports = {
           },
         ],
       },
+      // Compile .tsx?
+      {
+        test: /\.(ts|tsx)$/,
+        include: paths.appSrc,
+        // loader: require.resolve('ts-loader'),
+        use: [
+          // {
+          //   loader: 'babel-loader',
+          //   query: {
+          //     presets: ['env', 'react'],
+          //     plugins: [
+          //       'transform-react-jsx',
+          //       [
+          //         'react-css-modules',
+          //         {
+          //           context: path.resolve(__dirname, 'src')
+          //         }
+          //       ]
+          //     ]
+          //   }
+          // },
+          {
+            loader: 'ts-loader',
+          },
+        ]
+      },
+
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "url" loader exclusion list.
     ],

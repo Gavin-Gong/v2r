@@ -1,5 +1,4 @@
 import axios from 'axios'
-
 const host = 'http://localhost:8888';
 
 export function fetchOne() {
@@ -26,5 +25,9 @@ export function getPlayListDetail(params: {id: string}) {
   return axios.get(`${host}/playlist/detail`, {
     params,
   })
-  
+}
+export function getSongDetail(params: {id: number}) {
+  return axios.get(`${host}/song/detail`, {
+    params,
+  })
 }

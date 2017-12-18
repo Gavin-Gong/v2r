@@ -1,6 +1,5 @@
 import * as React from 'react'
 import './player.css'
-
 export interface IProps {
   track: string
 }

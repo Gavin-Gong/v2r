@@ -1,4 +1,3 @@
-import 'rxjs'
 import { 
   GET_PLAY_LIST,
   GET_PLAY_LIST_SUCCESS,

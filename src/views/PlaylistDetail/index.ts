@@ -1,4 +1,12 @@
 import view from './components'
+import types from './types'
+import actions from './actions'
+import epics from './epics'
+import reducers from './reducers'
 export {
-  view
+  view,
+  types,
+  actions,
+  epics,
+  reducers,
 }
