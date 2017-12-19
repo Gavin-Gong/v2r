@@ -1,15 +1,13 @@
 import * as React from 'react'
 import ListDetail from './PlaylistDetail'
-import { getPlayListDetail } from '../../../api'
+import api from '../../../api'
 import { connect } from 'react-redux'
 // import * as actions from '../actions'
 
 // import { AxiosResponse } from 'axios'
 export class PlaylistDetailC extends React.Component<any, any> {
   componentDidMount() {
-    getPlayListDetail({
-      id: this.props.match.params.id
-    }).then(({ data }) => {
+    api.getPlaylistDetail(this.props.match.params.id).then(({ data }) => {
       this.setState({
         trackList: data.playlist.tracks,
         info: data.playlist

@@ -1,2 +1,3 @@
-
-export types from './types';
+export default {
+  
+}

@@ -29,7 +29,7 @@
       "components/*": ["src/components/*"],
       "services/*": ["src/services/*"],
       "api/*": ["src/api/*"],
-      "api": ["src/api"],
+      "api": ["src/api/index"],
       "typings": ["src/typings/index.d.ts"]
     }
   },

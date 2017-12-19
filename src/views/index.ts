@@ -4,22 +4,19 @@
 import { combineReducers } from 'redux'
 import { combineEpics } from 'redux-observable';
 
-import * as Eye from './Eyepetizer'
-import * as One from './One'
+import * as Playlist from './Playlist'
 import * as PlaylistDetail from './PlaylistDetail'
 // export const views = [Eye.view, One.view]
 export const views = [
-  Eye.view,
-  One.view,
+  Playlist.view,
   PlaylistDetail.view
 ]
 export const reducers = combineReducers({
-  ...Eye.reducers,
-  ...One.reducers,
+  ...Playlist.reducers,
   ...PlaylistDetail.reducers
 })
 
 export const epics = combineEpics(
-  One.epics.playListEpic,
+  Playlist.epics.playListEpic,
   // PlaylistDetail.epics
 )

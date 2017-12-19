@@ -4,9 +4,6 @@ import { AxiosPromise } from 'axios';
 // export interface Fetch {
 //   (uid: number): AxiosPromise
 // }
-interface Fetch {
-  
-}
 
 export default {
   getRecommendRadio: (): AxiosPromise => $http.get(`/dj/recommend`),

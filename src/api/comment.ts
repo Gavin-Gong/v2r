@@ -1,6 +1,7 @@
 import $http from './_http'
 import { AxiosPromise } from 'axios';
 import { IPaging } from 'typings'
+
 export default {
   getMusicComment: (sid: number, paging: IPaging): AxiosPromise => {
     return $http.get(`/comment/music`, { params: { id: sid, ...paging } })
@@ -35,5 +36,4 @@ export default {
   unlikeComment: (id: number, cid: number, type: 0 | 1 | 2 | 3 | 4) => {
     return $http.get(`/comment/like`, { params: { id, cid, type, t: 0 } })
   }
-  
 }

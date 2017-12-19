@@ -6,6 +6,8 @@ export default {
     (sid: number): AxiosPromise => $http.get(`/song/detail?ids=${sid}`),
   getAlbumDetail: 
     (aid: number): AxiosPromise => $http.get(`/album?id=${aid}`),
+  getPlaylistDetail:
+    (pid: number): AxiosPromise => $http.get(`/playlist/detail?id=${pid}`),
   getArtistSongs: 
     (aid: number): AxiosPromise => $http.get(`/artist?id=${aid}`),
   getArtistMv: 
