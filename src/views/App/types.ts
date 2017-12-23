@@ -1,1 +1,3 @@
 export const PLAYSONG = 'PLAYSONG'
+export const PLAY_SONG_SUCCESS = 'PLAY_SONG_SUCCESS'
+export const PLAY_SONG_FAIL = 'PLAY_SONG_FAIL' 

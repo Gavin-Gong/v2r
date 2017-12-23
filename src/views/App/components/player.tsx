@@ -8,11 +8,12 @@ export default class Player extends React.Component<IProps> {
     const { track } = this.props
     return (
       <div className="player-bar">
-        <audio src={track} controls>
+        <audio src={track} controls autoPlay>
         </audio>
       </div>
     )
   }
+  
   constructor() {
     super()
   }

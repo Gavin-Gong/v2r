@@ -2,7 +2,7 @@ import * as React from 'react'
 import ListDetail from './PlaylistDetail'
 import api from '../../../api'
 import { connect } from 'react-redux'
-// import * as actions from '../actions'
+import * as actions from '../../App/actions'
 
 // import { AxiosResponse } from 'axios'
 export class PlaylistDetailC extends React.Component<any, any> {
@@ -15,7 +15,7 @@ export class PlaylistDetailC extends React.Component<any, any> {
     })
   }
   render() {
-    return <ListDetail trackList={this.state.trackList} info={this.state.info}/>
+    return <ListDetail trackList={this.state.trackList} info={this.state.info} playMusic={this.props.playMusic}/>
   }
   constructor() {
     super()
@@ -33,6 +33,9 @@ export class PlaylistDetailC extends React.Component<any, any> {
       }
     }
   }
+  componentWillMount() {
+
+  }
 }
 
 const mapStateToProps = (state: any, props: any) => {
@@ -41,6 +44,10 @@ const mapStateToProps = (state: any, props: any) => {
 
 const mapDispatchToProps = (dispatch: any) => {
   return {
+    playMusic: (id: number) => {
+      console.log('dispatch')
+      return () => dispatch(actions.playSong(id))
+    }
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(PlaylistDetailC)

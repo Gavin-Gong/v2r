@@ -1,10 +1,8 @@
 import * as React from 'react'
 import One from './one' 
-// import { getPlayList } from '../../../api'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
 
-// import { AxiosResponse } from 'axios'
 export class OneC extends React.Component<any, any> {
   componentDidMount() {
     this.props.getPlayList()

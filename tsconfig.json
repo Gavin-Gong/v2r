@@ -28,8 +28,7 @@
       "redux/*": ["src/redux/*"],
       "components/*": ["src/components/*"],
       "services/*": ["src/services/*"],
-      "api/*": ["src/api/*"],
-      "api": ["src/api/index"],
+      "api": ["src/api/index.ts"],
       "typings": ["src/typings/index.d.ts"]
     }
   },

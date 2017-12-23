@@ -1,3 +1,4 @@
+@import './icons.css';
 body {
   margin: 0;
   padding: 0;
@@ -6,3 +7,7 @@ body {
 /* :global {
   @import url('antd/dist/antd.css');
 } */
+
+#root {
+  min-height: 100vh;
+}

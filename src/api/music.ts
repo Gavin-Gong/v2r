@@ -4,6 +4,8 @@ import { IPaging } from 'typings'
 export default {
   getSongDetail: 
     (sid: number): AxiosPromise => $http.get(`/song/detail?ids=${sid}`),
+  getSongUrl:
+    (sid: number): AxiosPromise => $http.get(`/music/url?id=${sid}`),
   getAlbumDetail: 
     (aid: number): AxiosPromise => $http.get(`/album?id=${aid}`),
   getPlaylistDetail:
