@@ -10,3 +10,24 @@
 .player-bar audio {
   width: 100%;
 }
+
+.song {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.song img {
+  width: 60px;
+}
+
+.song .main {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  height: 60px;
+}
+
+.main p {
+  display: block;
+}

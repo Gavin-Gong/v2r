@@ -11,7 +11,7 @@ class App extends React.Component<any, any> {
       <Router>
         <div>
           <RouteView></RouteView>
-          <Player track={this.props.track} />
+          <Player {...this.props.song} />
         </div>
       </Router>
     );
@@ -21,7 +21,7 @@ class App extends React.Component<any, any> {
 const mapStateToProps = (state: any, props: any) => {
   console.log(state)
   return {
-    track: state.curSong.url
+    song: state.curSong
   }
 }
 export default connect(mapStateToProps)(App);

@@ -1,7 +1,21 @@
 import { IAction } from 'typings';
 import { PLAYSONG, PLAY_SONG_SUCCESS } from './types';
 
-export const curSong = (state: any, action: IAction) => {
+const initSate = {
+  name: '',
+  url: '',
+  artist: [
+    {
+      name: '佚名',
+      id: 1
+    }
+  ],
+  ablum: {
+    picUrl: ''
+  }
+}
+
+export const curSong = (state: any = initSate, action: IAction) => {
   switch (action.type) {
     case PLAYSONG:
       return {
