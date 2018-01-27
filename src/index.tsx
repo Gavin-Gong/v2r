@@ -4,7 +4,7 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux';
 import { createEpicMiddleware } from 'redux-observable'
 import logger from 'redux-logger'
-import App from './views/App/components';
+import App from './views/App/container';
 import registerServiceWorker from './registerServiceWorker';
 import './styles/index.css';
 import '!style-loader!css-loader!antd/dist/antd.css';

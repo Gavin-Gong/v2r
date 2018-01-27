@@ -1,4 +1,4 @@
-import { LOGIN } from './actionTypes'
+import { LOGIN } from './types'
 import { Action } from './actions'
 
 export interface State {

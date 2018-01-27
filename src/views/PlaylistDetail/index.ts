@@ -1,4 +1,4 @@
-import view from './components'
+import view from './container'
 import types from './types'
 import actions from './actions'
 import epics from './epics'

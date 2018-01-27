@@ -1,4 +1,4 @@
-import view from './components/container'
+import view from './container'
 
 export {
   view

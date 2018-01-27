@@ -1,4 +1,4 @@
-import { LOGIN } from './actionTypes';
+import { LOGIN } from './types';
 
 export interface Fields {
   name: string,

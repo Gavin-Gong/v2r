@@ -62,6 +62,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "api": "node ../NeteaseCloudMusicApi/app.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },

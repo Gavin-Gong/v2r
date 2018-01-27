@@ -1,5 +1,5 @@
 // import * as React from 'react';
-import Login from './login';
+import Login from './view';
 
 import { connect } from 'react-redux'
 // // import actions from './actions'

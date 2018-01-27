@@ -1,4 +1,6 @@
 import $http from './_http'
+
+// interface
 import { AxiosPromise } from 'axios';
 import { IPaging } from 'typings'
 
