@@ -4,14 +4,16 @@ import { connect } from 'react-redux'
 import RouteView from '../../router'
 import Player from '../../components/Player'
 import './style.css';
+import mockPlayList from '../../__mock__/songList'
 
+ const playerState = mockPlayList
 class App extends React.Component<any, any> {
   render() {
     return (
       <Router>
         <div>
           <RouteView></RouteView>
-          <Player {...this.props.song} />
+          <Player {...playerState} />
         </div>
       </Router>
     );

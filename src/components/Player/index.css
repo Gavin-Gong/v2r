@@ -31,3 +31,32 @@
 .main p {
   display: block;
 }
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.control {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.control i {
+  font-size: 24px;
+  cursor: pointer;
+}
+.volume-slider {
+  height: 100px;
+}
+.progress-slider {
+  width: 100%;
+  margin: 0 20px;
+}
+.progress-bar {
+  min-width: 100px;
+  display: inline-flex;
+  align-items: center;
+  flex-grow: 2;
+  padding: 0 20px;
+}

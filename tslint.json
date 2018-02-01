@@ -23,6 +23,7 @@
         "jsx-no-multiline-js": false,
         "jsx-self-close": false,
         "jsx-boolean-value": false,
+        "jsx-alignment": false,
         "label-position": true,
         "max-line-length": [ false, 120 ],
         "member-ordering": [
